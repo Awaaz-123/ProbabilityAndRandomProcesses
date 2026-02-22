@@ -91,7 +91,7 @@ clc
 clear all
 lambda =1;
 sample_size = 1000;
-sample_exponential = -log(rand(sample_size))/lambda;
+sample_exponential = -log(rand(sample_size,1))/lambda;
 histogram(sample_exponential,'Normalization','pdf');
 title('Exponential Distribution');
 xlabel('Value');
@@ -102,8 +102,8 @@ ylabel('Probability')
 % clear all
 % a = 0;
 % b = 10;
-% sample size = 1000;
-% samples uniform = a + (b - a) * rand(sample size,1);
+% sample_size = 1000;
+% samples_uniform = a + (b - a) * rand(sample_size,1);
 % histogram(samples_uniform, 'Normalization', 'pdf');
 % title('Continuous Uniform Distribution');
 % xlabel('Value');
@@ -115,8 +115,8 @@ ylabel('Probability')
 % clc
 % mu = 0;
 % sigma = 1;
-% sample size = 1000;
-% samples normal = mu + sigma*rand(sample size, 1);
+% sample_size = 1000;
+% samples_normal = mu + sigma*rand(sample_size, 1);
 % histogram(samples_normal,'Normalization', 'pdf');
 % title('Normal Distribution');
 % xlabel('Value');
