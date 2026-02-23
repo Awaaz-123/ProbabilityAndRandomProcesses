@@ -116,7 +116,7 @@ ylabel('Probability')
 % mu = 0;
 % sigma = 1;
 % sample_size = 1000;
-% samples_normal = mu + sigma*rand(sample_size, 1);
+% samples_normal = mu + sigma*randn(sample_size, 1);
 % histogram(samples_normal,'Normalization', 'pdf');
 % title('Normal Distribution');
 % xlabel('Value');
